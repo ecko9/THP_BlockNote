@@ -6,7 +6,7 @@ import NoteList from 'components/BlockNote/NoteList';
 const BlockNote = () => {
 
   const [savedNote, setSavedNote] = React.useState({});
-  const [noteList, setNoteList] = React.useState([{ title: "titre", content: "yoyoy", id: 1 }]);
+  const [noteList, setNoteList] = React.useState([{ title: "titre", content: "texte", id: 1 }]);
   const [displayEdit, setDisplayEdit] = React.useState(false);
 
   const displayNewNote = (e) => {
@@ -21,7 +21,7 @@ const BlockNote = () => {
 
   const removeNote = (e) => {
     let id = parseInt(document.querySelector('#rm-id').innerHTML, 10);
-    let arrayTmp = noteList.filter(note => note.id != id);
+    let arrayTmp = noteList.filter(note => note.id !== id);
     setNoteList(arrayTmp);
 
     if (localStorage.noteList)
