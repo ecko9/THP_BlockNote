@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(158, 154, 154);
+  font-family: 'Open Sans', sans-serif;
+  color: aliceblue;
+}
+
+h1 {
+  color: brown;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.home {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-note {
+  height: 80%;
+  width: 90%;
+  background-color: rgb(20, 19, 19);
+  display: flex;
+}
+.notelist::-webkit-scrollbar {
+  display: none;
+}
+.notelist {
+  height: 100%;
+  width: 25%;
+  border-right: 1px solid rgb(131, 123, 123);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  overflow: scroll;
+}
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.min-note {
+  width: 80%;
+  height: 100px;
+  margin-top: 10%;
+  overflow: hidden;
+}
+.notelist-title {
+  height: 40%;
+  overflow: hidden;
+}
+.notelist-content {
+  height: 60%;
+  overflow: hidden;
+}
+
+.display {
+  height: 100%;
+  width: 75%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.note {
+  height: 40%;
+  width: 100%;
+
+  padding: 5%;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 1px solid rgb(131, 123, 123);;
+  
+}
+
+.note-title::-webkit-scrollbar {
+  display: none;
+}
+.note-title {
+  height: 30%;
+  overflow: scroll;
+  margin-bottom: 5%;
+}
+
+.note-content::-webkit-scrollbar {
+  display: none;
+}
+.note-content {
+  height: 60%;
+  overflow: scroll;
+}
+
+.note-edit {
+  height: 60%;
+  width: 100%;
+
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.form-edit {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.edit-title {
+  width: 100%;
+  height: 15%;
+  
+  margin-bottom: 20px;
+}
+
+.edit-content {
+  width: 100%;
+  height: 75%;
+  
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: brown;
+  border: brown;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+  display: flex;
+  justify-content: center;
+}
+.h-id {
+  display: none;
+}
+
